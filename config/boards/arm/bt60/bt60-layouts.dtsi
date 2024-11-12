@@ -4,6 +4,6 @@
 
 // Assigning suitable kscan and matrix transforms
 &layout_60_iso {
-    transform = <&default_transform>;
-    kscan = <&kscan0>;
+    transform = &default_transform;
+    kscan = &kscan0;
 };
