@@ -1,9 +1,1 @@
-#include <physical_layouts.dtsi>
-#include <layouts/common/60percent/iso.dtsi>
 
-
-// Assigning suitable kscan and matrix transforms
-&layout_60_iso {
-    transform = &default_transform;
-    kscan = &kscan0;
-};
