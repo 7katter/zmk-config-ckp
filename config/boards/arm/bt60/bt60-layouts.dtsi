@@ -1,4 +1,5 @@
-
+#include <layouts/common/60percent/iso.dtsi>
+#include <physical_layouts.dtsi>
 
 / {
     layouts_common_60_percent_split_backspace_position_map: layouts_common_60_percent_split_backspace_position_map {
@@ -8,7 +9,6 @@
     };
 };
 
-#include <physical_layouts.dtsi>
 
 / {
     layout_60_iso_split_backspace: layout_60_split_backspace {
