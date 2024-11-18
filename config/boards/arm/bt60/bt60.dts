@@ -228,5 +228,5 @@
 
 
 &layout_60_iso {
-    transform = <&matrix_transform0>;
+    transform = <&default_transform>;
 };
