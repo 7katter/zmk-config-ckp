@@ -25,7 +25,7 @@
 		zmk,underglow = &led_strip;
 		zmk,backlight = &backlight;
 		zmk,battery = &vbatt;
-		zmk, physical_layout = &layout_60_iso;
+		zmk,physical-layout = &layout_60_iso;
 	};
 
 	sensors {
