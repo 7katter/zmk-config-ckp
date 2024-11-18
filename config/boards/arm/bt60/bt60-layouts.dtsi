@@ -1,7 +1,7 @@
 
 
 / {
-    layouts_common_60_percent_position_map: layouts_common_60_percent_position_map {
+    layouts_common_60_percent_split_backspace_position_map: layouts_common_60_percent_split_backspace_position_map {
         compatible = "zmk,physical-layout-position-map";
 
         complete;
@@ -11,9 +11,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    layout_60_iso: layout_60_iso {
+    layout_60_iso_split_backspace: layout_60_split_backspace {
         compatible = "zmk,physical-layout";
-        display-name = "60% ISO";
+        display-name = "60% ISO Split backspace";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -29,7 +29,9 @@
             , <&key_physical_attrs 100 100 1000    0       0     0     0>
             , <&key_physical_attrs 100 100 1100    0       0     0     0>
             , <&key_physical_attrs 100 100 1200    0       0     0     0>
-            , <&key_physical_attrs 200 100 1300    0       0     0     0>
+            , <&key_physical_attrs 100 100 1300    0       0     0     0>
+            , <&key_physical_attrs 100 100 1400    0       0     0     0>
+
             , <&key_physical_attrs 150 100    0  100       0     0     0>
             , <&key_physical_attrs 100 100  150  100       0     0     0>
             , <&key_physical_attrs 100 100  250  100       0     0     0>
@@ -82,11 +84,11 @@
     };
 };
 
-&layouts_common_60_percent_position_map {
-    layout_60_iso_posmap: layout_60_iso {
-        physical-layout = <&layout_60_iso>;
+&layouts_common_60_percent_split_backspace_position_map {
+    layout_60_iso_split_backspace_posmap: layout_60_iso_split_backspace {
+        physical-layout = <&layout_60_iso_split_backspace>;
         positions
-            = < 0  1  2  3  4  5  6  7  8  9 10 11 12 13 62>
+            = < 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 62>
             , <14 15 16 17 18 19 20 21 22 23 24 25 26 63>
             , <27 28 29 30 31 32 33 34 35 36 37 38 40>
             , <41 42 43 44 45 46 47 48 49 50 51 52 53 64 65>
