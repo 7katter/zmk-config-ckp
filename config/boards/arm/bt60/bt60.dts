@@ -24,8 +24,8 @@
 		zmk,kscan = &kscan0;
 		zmk,underglow = &led_strip;
 		zmk,backlight = &backlight;
-		zmk,matrix_transform = &default_transform;
 		zmk,battery = &vbatt;
+		zmk, physical_layout = &layout_60_iso;
 	};
 
 	sensors {
@@ -224,4 +224,9 @@
 		spi-zero-frame = <0x40>;
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
 	};
+};
+
+
+&layout_60_iso {
+    transform = <&matrix_transform0>;
 };
